@@ -1,0 +1,39 @@
+.gallery {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-top: 1px solid #797979;
+}
+
+.gallerys {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gallerys img {
+    width: 23%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ---media query------ */
+
+@media (max-width: 800px) {
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        width: 48%;
+        height: 120px;
+        margin-bottom: 25px;
+    }
+}

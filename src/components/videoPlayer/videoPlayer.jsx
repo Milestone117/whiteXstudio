@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import './VideoPlayer.css'
+import './videoPlayer.css'
 
 import video from '../../assets/video.mp4'
 

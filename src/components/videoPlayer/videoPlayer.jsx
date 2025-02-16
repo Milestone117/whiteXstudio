@@ -38,7 +38,7 @@ const VideoPlayer = ({ playState, setPlayState }) => {
 
     >
 
-      <video src={video} autoPlay muted controls></video>
+      <video src={video} play controls></video>
 
     </div>
 

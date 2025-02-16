@@ -5,37 +5,37 @@ import './service.css';
 function Services() {
   const services = [
     {
-      icon: <Camera color="#ffffff" size={48} />,
+      icon: <Camera color="#212ea0" size={48} />,
       title: "Photography",
       description: "Professional photography services for weddings, events, portraits, and commercial projects. We capture your precious moments with artistic excellence.",
       bgImage: "../../assets/photgraphy.jpg" // You'll need to add your actual image paths
     },
     {
-      icon: <Video color="#ffffff" size={48} />,
+      icon: <Video color="#212ea0" size={48} />,
       title: "Videography",
       description: "High-quality video production for corporate events, weddings, music videos, and promotional content. We bring your stories to life.",
       bgImage: "../../assets/videography.jpg"
     },
     {
-      icon: <Film color="#ffffff" size={48} />,
+      icon: <Film color="#212ea0" size={48} />,
       title: "Film Production",
       description: "Complete film production services including scriptwriting, shooting, editing, and post-production. We transform your vision into cinematic reality.",
       bgImage: "../../assets/film.jpg"
     },
     {
-      icon: <Users color="#ffffff" size={48} />,
+      icon: <Users color="#212ea0" size={48} />,
       title: "Event Coverage",
       description: "Comprehensive event documentation with both photography and videography. Perfect for corporate events, conferences, and social gatherings.",
       bgImage: "../../assets/event.jpg"
     },
     {
-      icon: <Award color="#ffffff" size={48} />,
+      icon: <Award color="#212ea0" size={48} />,
       title: "Commercial Shoots",
       description: "Professional product photography and commercial video production for brands. We help showcase your products and services effectively.",
       bgImage: "../../assets/commercial.jpg"
     },
     {
-      icon: <Clock color="#ffffff" size={48} />,
+      icon: <Clock color="#212ea0" size={48} />,
       title: "Same Day Edits",
       description: "Quick turnaround editing services for events and special occasions. Get your memories delivered while they're still fresh.",
       bgImage: "/images/same-day-edit-bg.jpg"

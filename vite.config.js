@@ -4,8 +4,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: true, // Listen on all IP addresses
-    port: 5173, // Optional: specify a custom port
+    host: true,
+    port: 5173,
   },
-  base: '/whiteXstudio/'
+  base: '/whiteXstudio/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true
+  }
 });

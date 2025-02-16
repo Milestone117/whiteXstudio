@@ -7,10 +7,8 @@ export default defineConfig({
     host: true,
     port: 5173,
   },
-  base: '/whiteXstudio/',
+  base: '/whiteXStudio/', // Make sure this matches your repo name EXACTLY
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: true
+    outDir: 'dist'
   }
 });

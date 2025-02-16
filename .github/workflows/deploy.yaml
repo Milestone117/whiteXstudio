@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # You can change this to windows-latest or macos-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -16,17 +16,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'  # or the version of Node.js you're using
-
-    - name: Set environment variable for OpenSSL (if needed)
-      run: |
-        echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
+        node-version: '18'  # Updated to Node.js 18
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci  # Using ci instead of install for more reliable builds
 
     - name: Build the project
       run: npm run build
 
-    - name: Deploy to GitHub Pages
-      run: npm run deploy
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist

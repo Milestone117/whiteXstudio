@@ -3,12 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment when you push to the 'main' branch
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest  # You can change this to windows-latest or macos-latest
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -16,7 +16,11 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '16'  # or the version of Node.js you're using
+
+    - name: Set environment variable for OpenSSL (if needed)
+      run: |
+        echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: npm install

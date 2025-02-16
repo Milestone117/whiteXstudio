@@ -7,5 +7,5 @@ export default defineConfig({
     host: true, // Listen on all IP addresses
     port: 5173, // Optional: specify a custom port
   },
-  base: '/whiteXstudio'
+  base: '/whiteXstudio/'
 });

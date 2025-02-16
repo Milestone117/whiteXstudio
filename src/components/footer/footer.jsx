@@ -6,11 +6,13 @@ import './Footer.css'
 
 const Footer = () => {
 
+  const currentYear = new Date().getFullYear();
+
   return (
 
     <div className='footer'>
 
-        <p>&copy; 2024 whiteXstudio. All rights reserved. | Designed and Developed by MilesTech Team</p>
+        <p>&copy; {currentYear} whiteXstudio. All rights reserved. | Designed and Developed by Techsity Web Team</p>
 
         <ul>
 

@@ -1,63 +1,110 @@
 .services {
-    margin: 5% auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100dvh;
-    border-top: 1px solid #797979;
+    padding: 80px 0;
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .service-card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 25px;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Individual card backgrounds */
+.service-card-1 {
+    background: linear-gradient(rgba(50, 24, 53, 0.555),rgba(75, 24, 70, 0.932)), url('../../assets/photography.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-card-2 {
+    background: linear-gradient(rgba(50, 24, 53, 0.418),rgba(75, 24, 70, 0.788)), url('../../assets/videography.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-card-3 {
+    background: linear-gradient(rgba(50, 24, 53, 0.418),rgba(75, 24, 70, 0.788)), url('../../assets/film.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-card-4 {
+    background: linear-gradient(rgba(50, 24, 53, 0.418),rgba(75, 24, 70, 0.788)), url('../../assets/event.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-card-5 {
+    background: linear-gradient(rgba(50, 24, 53, 0.418),rgba(75, 24, 70, 0.788)), url('../../assets/commercial.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-card-6 {
+    background: linear-gradient(rgba(50, 24, 53, 0.418),rgba(75, 24, 70, 0.788)), url('../../assets/edits.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-card-7 {
+    background: linear-gradient(rgba(50, 24, 53, 0.418),rgba(75, 24, 70, 0.788)), url('../../assets/rental.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .service-content {
+    padding: 30px;
     text-align: center;
+    color: #fff; /* Changed text color to white for better visibility */
 }
 
 .service-icon {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.service-card h3 {
-    font-size: 20px;
+.service-content h3 {
+    color: #fff; /* Changed to white */
+    font-size: 24px;
     margin-bottom: 15px;
-    color: #212121;
+    font-weight: 600;
 }
 
-.service-card p {
-    color: #555;
+.service-content p {
+    color: rgba(255, 255, 255, 0.9); /* Changed to semi-transparent white */
+    font-size: 16px;
     line-height: 1.6;
+    margin: 0;
 }
 
-@media (max-width: 1000px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .services {
-        margin: 40px auto;
-    }
-}
+/* Your existing media queries remain the same */

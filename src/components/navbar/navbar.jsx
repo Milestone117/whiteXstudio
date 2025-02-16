@@ -52,13 +52,13 @@ const Navbar = () => {
 
             <li><Link to='hero' smooth={true} offset={0} duration={500}>home</Link></li>
 
-            <li><Link to='about' smooth={true} offset={0} duration={500}>about us</Link></li>
+            <li><Link to='about' smooth={true} offset={-100} duration={500}>about us</Link></li>
 
-            <li><Link to='services' smooth={true} offset={-100} duration={500}>services</Link></li>
+            <li><Link to='services' smooth={true} offset={-200} duration={500}>services</Link></li>
 
-            <li><Link to='gallery' smooth={true} offset={-100} duration={500}>gallery</Link></li>
+            <li><Link to='gallery' smooth={true} offset={-350} duration={500}>gallery</Link></li>
 
-            <li><Link to='testimonials' smooth={true} offset={-100} duration={500}>testimonials</Link></li>
+            <li><Link to='testimonials' smooth={true} offset={-300} duration={500}>testimonials</Link></li>
 
             <li><Link to='contact' smooth={true} offset={-100} duration={500}>contact us</Link></li>
 

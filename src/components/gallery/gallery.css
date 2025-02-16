@@ -1,13 +1,7 @@
 .gallery {
-    margin: auto;
+    margin: 80px auto;
     width: 90%;
     text-align: center;
-    height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    border-top: 1px solid #797979;
 }
 
 .gallerys {
@@ -28,10 +22,14 @@
 
 @media (max-width: 800px) {
     .gallery {
+        margin: auto;
+    }
+
+    .gallerys {
         flex-wrap: wrap;
     }
 
-    .gallery img {
+    .gallerys img {
         width: 48%;
         height: 120px;
         margin-bottom: 25px;

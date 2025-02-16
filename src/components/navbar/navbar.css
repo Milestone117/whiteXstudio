@@ -9,6 +9,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
     z-index: 10;
 }
 
@@ -72,6 +73,12 @@ nav ul li:hover::after {
 }
 
 @media (max-width: 840px) {
+
+    .logo {
+        width: 70px;
+        margin-left: -5%;
+    }
+
     nav {
         padding: 15px 0;
     }
